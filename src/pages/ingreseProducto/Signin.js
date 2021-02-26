@@ -12,51 +12,54 @@ import {
 const INPUT_CONFIG = [
   {
     title: "Nombre",
-    name: "fullname",
+    name: "title",
+    descripcion: "Chompita"
 
   },
   {
     title: "Descripcion",
-    name: "descripcion",
-
+    name: "description",
+    descripcion: "Abrigadora"
   },
   {
     title: "Link de la imagen",
-    name: "imagen",
-
+    name: "imagePath",
+    descripcion: ""
   },
   {
     title: "Tallas",
-    name: "tallas",
+    name: "size",
+    descripcion: "L,M, otros"
   },
   {
     title: "Precio",
-    name: "precio",
-
+    name: "price",
+    descripcion: "5.00"
   },
   {
     title: "Color",
     name: "color",
-
+    descripcion: ""
   },
   {
     title: "Cantidad",
-    name: "cantidad",
-
+    name: "quantity",
+    descripcion: "20"
   },
   {
-    title: "Sexo",
-    name: "sexo",
-
+    title: "Department",
+    name: "department",
+    descripcion: "Varones, Mujeres, Niños"
   },
   {
     title: "Categoria",
-    name: "categoria",
+    name: "category",
+    descripcion: "Uhmmm"
   },  
 ]
 
 
-export default function Signin({signin,signin_loading,signin_error}) {
+export default function Registro({registro,registro_loading,registro_error}) {
   return (
     <div>
       <LoginSignin
@@ -64,9 +67,9 @@ export default function Signin({signin,signin_loading,signin_error}) {
       title="Registrar Producto"
       footer_text="Asegurese de ingresar de manera correcta los datos de su producto"
       footer_redirect="Iniciar Sesion"
-      submitAction={signin}
-      loading={signin_loading}
-      signin_error={signin_error}
+      submitAction={registro}
+      loading={registro_loading}
+      signin_error={registro_error}
       />
     </div>
   )

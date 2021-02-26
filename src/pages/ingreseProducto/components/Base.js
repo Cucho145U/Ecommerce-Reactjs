@@ -22,11 +22,12 @@ export default function Base({
       <div className={styles.title_style}>{title}</div>
       <div className={styles.border_style}></div>
       {
-        inputs.map(({ title,name, validations }) =>
+        inputs.map(({ title,name, validations,descripcion }) =>
           <FormInput
             key={name}
             name={name}
             title={title}
+            descripcion={descripcion}
             validations={validations}
             errorMessage={errorMsg[name].errorMsg}
             onChange={onInputChange}
